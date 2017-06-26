@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mMs-dL-leY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Q0X-gU-Kc3">
+            <objects>
+                <viewController id="dnu-WP-5O6" customClass="LoginViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GiQ-UZ-mtZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rq6-dr-w07"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KfM-BI-BLa" userLabel="View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YiK-Yw-Xxq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="WFT-Ww-I24">
+                                        <rect key="frame" x="67.5" y="79.5" width="240" height="106.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Makestagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKv-KY-6ar">
+                                                <rect key="frame" x="1.5" y="0.0" width="237" height="43"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up to see photos and videos from your friends." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te5-fP-Sex">
+                                                <rect key="frame" x="0.0" y="68" width="240" height="38.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="7WY-MK-wyc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.40982142857142856" blue="0.4196577380952381" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="8cH-FV-siq"/>
+                                    <constraint firstItem="WFT-Ww-I24" firstAttribute="centerY" secondItem="YiK-Yw-Xxq" secondAttribute="centerY" id="EUk-WJ-bUm"/>
+                                    <constraint firstItem="WFT-Ww-I24" firstAttribute="centerX" secondItem="YiK-Yw-Xxq" secondAttribute="centerX" id="fJj-nU-du7"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USP-V3-8w4">
+                                <rect key="frame" x="35" y="290" width="305" height="44"/>
+                                <color key="backgroundColor" red="0.26713529229164124" green="0.66520839929580688" blue="0.95198589563369751" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6oQ-GG-S7t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Register or Log In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="dnu-WP-5O6" eventType="touchUpInside" id="XLm-Gg-3cF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YiK-Yw-Xxq" secondAttribute="trailing" id="041-9d-Jcs"/>
+                            <constraint firstItem="USP-V3-8w4" firstAttribute="top" secondItem="YiK-Yw-Xxq" secondAttribute="bottom" constant="25" id="H3z-X8-jmu"/>
+                            <constraint firstItem="YiK-Yw-Xxq" firstAttribute="top" secondItem="KfM-BI-BLa" secondAttribute="top" id="W12-IN-cny"/>
+                            <constraint firstItem="USP-V3-8w4" firstAttribute="leading" secondItem="KfM-BI-BLa" secondAttribute="leading" constant="35" id="W72-0K-x1R"/>
+                            <constraint firstAttribute="trailing" secondItem="USP-V3-8w4" secondAttribute="trailing" constant="35" id="cBp-Pg-1Xb"/>
+                            <constraint firstItem="YiK-Yw-Xxq" firstAttribute="leading" secondItem="KfM-BI-BLa" secondAttribute="leading" id="xvH-NN-yvW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TwB-Dy-gsx"/>
+                    <connections>
+                        <outlet property="loginButton" destination="USP-V3-8w4" id="aK6-Qe-P86"/>
+                        <segue destination="DGf-hd-SV6" kind="show" identifier="toCreateUsername" id="mr7-oe-ss3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZk-sC-qKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="137.18140929535232"/>
+        </scene>
+        <!--Create Username View Controller-->
+        <scene sceneID="3CL-bm-Kim">
+            <objects>
+                <viewController id="DGf-hd-SV6" customClass="CreateUsernameViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bbl-88-Z1y"/>
+                        <viewControllerLayoutGuide type="bottom" id="riu-tj-LbL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kwv-Pc-PuD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="S6Y-Qo-FdD">
+                                <rect key="frame" x="35" y="109" width="305" height="205"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Username" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4n-Df-EOl">
+                                        <rect key="frame" x="68" y="0.0" width="169.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a username so your friends can find you. You can change this later." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIv-NV-sd2">
+                                        <rect key="frame" x="5.5" y="43.5" width="294.5" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Hu-sj-wRE">
+                                        <rect key="frame" x="0.0" y="99" width="305" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Pxt-BK-iOD"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="usernameTextField:" destination="DGf-hd-SV6" eventType="editingDidEnd" id="Svy-kR-ud3"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8SZ-7Z-RBv">
+                                        <rect key="frame" x="0.0" y="161" width="305" height="44"/>
+                                        <color key="backgroundColor" red="0.26713529229999999" green="0.66520839929999998" blue="0.95198589560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="sfu-4B-3mY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextButton:" destination="DGf-hd-SV6" eventType="touchUpInside" id="AxX-VT-kjx"/>
+                                            <action selector="nextButtonTapped:" destination="DGf-hd-SV6" eventType="touchUpInside" id="Xa3-gZ-mEW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8SZ-7Z-RBv" firstAttribute="width" secondItem="S6Y-Qo-FdD" secondAttribute="width" id="jJG-Da-mk0"/>
+                                    <constraint firstItem="9Hu-sj-wRE" firstAttribute="width" secondItem="S6Y-Qo-FdD" secondAttribute="width" id="oyt-EZ-xDA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S6Y-Qo-FdD" firstAttribute="top" secondItem="Bbl-88-Z1y" secondAttribute="bottom" constant="45" id="FbG-Oy-K0q"/>
+                            <constraint firstItem="S6Y-Qo-FdD" firstAttribute="leading" secondItem="kwv-Pc-PuD" secondAttribute="leading" constant="35" id="TeB-fa-Qc4"/>
+                            <constraint firstItem="S6Y-Qo-FdD" firstAttribute="centerX" secondItem="kwv-Pc-PuD" secondAttribute="centerX" id="gUC-qq-SAK"/>
+                            <constraint firstAttribute="trailing" secondItem="S6Y-Qo-FdD" secondAttribute="trailing" constant="35" id="sVr-bU-THA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LmK-Sl-Gmv"/>
+                    <connections>
+                        <outlet property="nextButton" destination="8SZ-7Z-RBv" id="fZZ-0i-vzy"/>
+                        <outlet property="usernameTextField" destination="9Hu-sj-wRE" id="eM2-DU-Gct"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XqL-36-KJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924" y="136.28185907046478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uBk-du-tDh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="mMs-dL-leY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="daq-X2-KiE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dnu-WP-5O6" kind="relationship" relationship="rootViewController" id="4Gv-xe-zci"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qXO-Zr-M8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

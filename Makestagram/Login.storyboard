@@ -137,8 +137,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="nextButton:" destination="DGf-hd-SV6" eventType="touchUpInside" id="AxX-VT-kjx"/>
-                                            <action selector="nextButtonTapped:" destination="DGf-hd-SV6" eventType="touchUpInside" id="Xa3-gZ-mEW"/>
+                                            <action selector="nextButtonTapped:" destination="DGf-hd-SV6" eventType="touchUpInside" id="KND-02-YCn"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -158,7 +157,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="LmK-Sl-Gmv"/>
                     <connections>
-                        <outlet property="nextButton" destination="8SZ-7Z-RBv" id="fZZ-0i-vzy"/>
+                        <outlet property="nextButton" destination="8SZ-7Z-RBv" id="Yqc-Cp-CjY"/>
                         <outlet property="usernameTextField" destination="9Hu-sj-wRE" id="eM2-DU-Gct"/>
                     </connections>
                 </viewController>

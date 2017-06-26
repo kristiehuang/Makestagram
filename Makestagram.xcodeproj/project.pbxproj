@@ -10,6 +10,7 @@
 		1CDE2B5AE34570BF4B0E57C0 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150C95326803D1CD3F881037 /* Pods_Makestagram.framework */; };
 		9E02F74B1F018A3600A1BAF7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02F74A1F018A3600A1BAF7 /* User.swift */; };
 		9E02F7501F01A1B700A1BAF7 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02F74F1F01A1B700A1BAF7 /* CreateUsernameViewController.swift */; };
+		9E02F7521F01C21300A1BAF7 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02F7511F01C21300A1BAF7 /* UserService.swift */; };
 		9E9079B01EFD96DB00A45C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9079AF1EFD96DB00A45C21 /* Assets.xcassets */; };
 		9E9079BD1EFDC80800A45C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9079BC1EFDC80800A45C21 /* AppDelegate.swift */; };
 		9E9079BF1EFDC81900A45C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9079BE1EFDC81900A45C21 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		150C95326803D1CD3F881037 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E02F74A1F018A3600A1BAF7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9E02F74F1F01A1B700A1BAF7 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		9E02F7511F01C21300A1BAF7 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Makestagram/UserService.swift; sourceTree = "<group>"; };
 		9E9079A51EFD96DB00A45C21 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9079AF1EFD96DB00A45C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E9079BC1EFDC80800A45C21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		9E02F7531F01C22A00A1BAF7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9E02F7511F01C21300A1BAF7 /* UserService.swift */,
+			);
+			name = Services;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		9E90799C1EFD96DB00A45C21 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				9E9079BC1EFDC80800A45C21 /* AppDelegate.swift */,
+				9E02F7531F01C22A00A1BAF7 /* Services */,
 				9E9079CD1EFDC99000A45C21 /* View Controllers */,
 				9E02F74C1F018A3A00A1BAF7 /* Models */,
 				9E9079CE1EFDC99800A45C21 /* Storyboards */,
@@ -263,6 +275,7 @@
 			files = (
 				9E02F74B1F018A3600A1BAF7 /* User.swift in Sources */,
 				9E9079D21EFDCC3E00A45C21 /* LoginViewController.swift in Sources */,
+				9E02F7521F01C21300A1BAF7 /* UserService.swift in Sources */,
 				9E9079C11EFDC82300A45C21 /* ViewController.swift in Sources */,
 				9E02F7501F01A1B700A1BAF7 /* CreateUsernameViewController.swift in Sources */,
 				9E9079BD1EFDC80800A45C21 /* AppDelegate.swift in Sources */,

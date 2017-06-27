@@ -55,33 +55,34 @@ extension LoginViewController: FUIAuthDelegate {
 //            assertionFailure("Error signing in: \(error.localizedDescription)")
 //            return
 //        }
-        
         guard let user = user
             else { return }
         
-        let rootRef = Database.database().reference()
-        let userRef = rootRef.child("users").child(user.uid)
+        //program
+        UserServices.show(forUID: user.uid) { (user) in
             
-        userRef.observeSingleEvent(of: .value, with: { [unowned self] (snapshot) in
-            if let user = User(snapshot: snapshot) {
+            if let user = user {
                 User.setCurrent(user)
                 print("Welcome back, \(user.username).")
                 
-                let storyboard = UIStoryboard(name: "Main", bundle: .main)
                 
-                if let initialViewController = storyboard.instantiateInitialViewController() {
-                    self.view.window?.rootViewController = initialViewController
-                    self.view.window?.makeKeyAndVisible()
-                }
-
-                
+                //before refactoring
+//                let storyboard = UIStoryboard(name: "Main", bundle: .main)
+//                
+//                if let initialViewController = storyboard.instantiateInitialViewController() {
+//                    self.view.window?.rootViewController = initialViewController
+//                    self.view.window?.makeKeyAndVisible()
+//                }
+                let initialViewController = UIStoryboard.initialViewController(for: .main)
+                self.view.window?.rootViewController = initialViewController
+                self.view.window?.makeKeyAndVisible()
                 
                 
             } else {
                 print("new user")
-                self.performSegue(withIdentifier: "toCreateUsername", sender: self)
+                self.performSegue(withIdentifier: Constants.Segue.toCreateUsername, sender: self)
             }
-        })
+        }
         
     }
 }

@@ -22,14 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //change initial view to Login instead of Main
-        let storyboard = UIStoryboard(name: "Login", bundle: .main)
         
-        if let initialViewController = storyboard.instantiateInitialViewController() {
-
-            window?.rootViewController = initialViewController
-            window?.makeKeyAndVisible()
-        }
-        
+//        let storyboard = UIStoryboard(name: "Login", bundle: .main)
+//        
+//        if let initialViewController = storyboard.instantiateInitialViewController() {
+//            
+//            window?.rootViewController = initialViewController
+//            window?.makeKeyAndVisible()
+//        }
+        let initialViewController = UIStoryboard.initialViewController(for: .main)
+        window?.rootViewController = initialViewController
+        window?.makeKeyAndVisible()
         
         return true
     }

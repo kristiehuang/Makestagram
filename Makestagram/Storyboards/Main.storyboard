@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="4Lt-1F-JWz">
             <objects>
                 <viewController id="dYG-O7-Krn" sceneMemberID="viewController">
@@ -22,16 +22,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="beZ-IQ-Wrc"/>
+                    <tabBarItem key="tabBarItem" title="" image="tab_plus_black" id="beZ-IQ-Wrc">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itP-jR-2HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="416" y="383"/>
         </scene>
-        <!--Item-->
+        <!--Find Friends View Controller-->
         <scene sceneID="hde-Qe-QIO">
             <objects>
-                <viewController id="Jli-7L-l7E" sceneMemberID="viewController">
+                <viewController id="Jli-7L-l7E" customClass="FindFriendsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b51-iX-sNe"/>
                         <viewControllerLayoutGuide type="bottom" id="T90-Ii-02z"/>
@@ -41,16 +43,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="gGD-rT-naO"/>
+                    <tabBarItem key="tabBarItem" title="" image="tab_find_friends_black" id="gGD-rT-naO">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mB7-j4-ohS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="415" y="-1119"/>
         </scene>
-        <!--Item 1-->
+        <!--Home View Controller-->
         <scene sceneID="n4X-3m-h04">
             <objects>
-                <viewController id="ygf-tm-wNG" sceneMemberID="viewController">
+                <viewController id="ygf-tm-wNG" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="huF-xF-FMD"/>
                         <viewControllerLayoutGuide type="bottom" id="77t-h0-YGP"/>
@@ -60,7 +64,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="n9H-bc-U8i"/>
+                    <tabBarItem key="tabBarItem" title="" image="tab_home_black" id="n9H-bc-U8i">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fK3-Uq-f2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,4 +92,9 @@
             <point key="canvasLocation" x="-465" y="-199"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab_find_friends_black" width="25" height="25"/>
+        <image name="tab_home_black" width="25" height="25"/>
+        <image name="tab_plus_black" width="25" height="25"/>
+    </resources>
 </document>

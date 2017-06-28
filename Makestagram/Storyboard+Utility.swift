@@ -24,7 +24,6 @@ extension UIStoryboard {
     
     
     
-    
     //initialize correct storyboard
     convenience init(type: MakestaType, bundle: Bundle? = nil) {
         self.init(name: type.filename, bundle: bundle)

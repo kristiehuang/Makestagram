@@ -27,13 +27,13 @@ class CreateUsernameViewController: UIViewController {
         
         UserServices.create(firUser, username: username)  {
             (user) in
-            guard let _ = user
+            guard let user = user
             else {
                 return
             }
             
-            User.setCurrent(user!)
-            print("created new user")
+            User.setCurrent(user, writeToUserDefaults: true)
+            print("created new user & saved to userdefaults")
             
             
             //before refactoring

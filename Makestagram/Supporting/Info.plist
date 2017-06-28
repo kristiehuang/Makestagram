@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Makestagram needs to access your photos so we can post.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Makestagram needs to access your photos so we can post.</string>
 	<key>CFBundleDisplayName</key>
 	<string>Makestagram</string>
 	<key>CFBundleExecutable</key>

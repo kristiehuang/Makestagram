@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //change initial view to Login instead of Main
-        
+//        //BEFORE REFACTORING
 //        let storyboard = UIStoryboard(name: "Login", bundle: .main)
 //        
 //        if let initialViewController = storyboard.instantiateInitialViewController() {
@@ -30,9 +30,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            window?.rootViewController = initialViewController
 //            window?.makeKeyAndVisible()
 //        }
-        let initialViewController = UIStoryboard.initialViewController(for: .main)
-        window?.rootViewController = initialViewController
-        window?.makeKeyAndVisible()
+        
+        //AFTER REFACTORING
+//        let initialViewController = UIStoryboard.initialViewController(for: .main)
+//        window?.rootViewController = initialViewController
+//        window?.makeKeyAndVisible()
+        
+        //use func instead
+        configureInitialRootViewController(for: window)
         
         return true
     }
@@ -63,4 +68,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
+
+extension AppDelegate {
+    func configureInitialRootViewController(for window: UIWindow?) {
+        let defaults = UserDefaults.standard
+        let initialViewController: UIViewController
+        
+        if Auth.auth().currentUser != nil, let userData = defaults.object(forKey: Constants.UserDefaults.currentUser) as? Data, let user = NSKeyedUnarchiver.unarchiveObject(with: userData) as? User {
+                
+            User.setCurrent(user)
+            //if user already exists, if FIRUser singleton already exists,, then skip login to main storyboard
+            initialViewController = UIStoryboard.initialViewController(for: .main)
+        }
+        else {
+            //if user doesnt already exist, go to login storyboard
+            initialViewController = UIStoryboard.initialViewController(for: .login)
+  
+        }
+        
+        window?.rootViewController = initialViewController
+        window?.makeKeyAndVisible()
+    }
+}
+
 

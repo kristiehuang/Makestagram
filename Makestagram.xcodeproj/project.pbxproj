@@ -16,6 +16,8 @@
 		9E02F77E1F02F7A500A1BAF7 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02F77D1F02F7A500A1BAF7 /* FindFriendsViewController.swift */; };
 		9E02F7801F02F7AC00A1BAF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02F77F1F02F7AC00A1BAF7 /* HomeViewController.swift */; };
 		9E02F7821F02F7B100A1BAF7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02F7811F02F7B100A1BAF7 /* LoginViewController.swift */; };
+		9E02F7841F030AA700A1BAF7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02F7831F030AA700A1BAF7 /* MainTabBarController.swift */; };
+		9E02F7861F03228E00A1BAF7 /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02F7851F03228E00A1BAF7 /* MGPhotoHelper.swift */; };
 		9E9079B01EFD96DB00A45C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9079AF1EFD96DB00A45C21 /* Assets.xcassets */; };
 		9E9079BD1EFDC80800A45C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9079BC1EFDC80800A45C21 /* AppDelegate.swift */; };
 		9E9079BF1EFDC81900A45C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9079BE1EFDC81900A45C21 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 		9E02F77D1F02F7A500A1BAF7 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindFriendsViewController.swift; path = "View Controllers/FindFriendsViewController.swift"; sourceTree = "<group>"; };
 		9E02F77F1F02F7AC00A1BAF7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "View Controllers/HomeViewController.swift"; sourceTree = "<group>"; };
 		9E02F7811F02F7B100A1BAF7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "View Controllers/LoginViewController.swift"; sourceTree = "<group>"; };
+		9E02F7831F030AA700A1BAF7 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		9E02F7851F03228E00A1BAF7 /* MGPhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MGPhotoHelper.swift; path = Helpers/MGPhotoHelper.swift; sourceTree = "<group>"; };
 		9E9079A51EFD96DB00A45C21 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9079AF1EFD96DB00A45C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E9079BC1EFDC80800A45C21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,14 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		9E02F7871F03229600A1BAF7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9E02F7851F03228E00A1BAF7 /* MGPhotoHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		9E90799C1EFD96DB00A45C21 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +139,7 @@
 				9E02F74C1F018A3A00A1BAF7 /* Models */,
 				9E9079CE1EFDC99800A45C21 /* Storyboards */,
 				9E02F7741F02D35C00A1BAF7 /* Extensions */,
+				9E02F7871F03229600A1BAF7 /* Helpers */,
 				9E9079CC1EFDC98600A45C21 /* Supporting Files */,
 				9E9079AF1EFD96DB00A45C21 /* Assets.xcassets */,
 			);
@@ -148,9 +161,10 @@
 			isa = PBXGroup;
 			children = (
 				9E02F7811F02F7B100A1BAF7 /* LoginViewController.swift */,
+				9E02F77B1F02F79D00A1BAF7 /* CreateUsernameViewController.swift */,
+				9E02F7831F030AA700A1BAF7 /* MainTabBarController.swift */,
 				9E02F77F1F02F7AC00A1BAF7 /* HomeViewController.swift */,
 				9E02F77D1F02F7A500A1BAF7 /* FindFriendsViewController.swift */,
-				9E02F77B1F02F79D00A1BAF7 /* CreateUsernameViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -292,8 +306,10 @@
 			files = (
 				9E02F7821F02F7B100A1BAF7 /* LoginViewController.swift in Sources */,
 				9E02F74B1F018A3600A1BAF7 /* User.swift in Sources */,
+				9E02F7841F030AA700A1BAF7 /* MainTabBarController.swift in Sources */,
 				9E02F7521F01C21300A1BAF7 /* UserService.swift in Sources */,
 				9E02F77C1F02F79D00A1BAF7 /* CreateUsernameViewController.swift in Sources */,
+				9E02F7861F03228E00A1BAF7 /* MGPhotoHelper.swift in Sources */,
 				9E02F7801F02F7AC00A1BAF7 /* HomeViewController.swift in Sources */,
 				9E02F7761F02D37700A1BAF7 /* Storyboard+Utility.swift in Sources */,
 				9E02F7731F02D2D600A1BAF7 /* Constants.swift in Sources */,

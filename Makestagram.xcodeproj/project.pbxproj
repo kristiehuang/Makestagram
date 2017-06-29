@@ -24,6 +24,14 @@
 		9E30EA4F1F0460FF00E93109 /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30EA4E1F0460FF00E93109 /* UIImage+Size.swift */; };
 		9E30EA511F0461EA00E93109 /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30EA501F0461EA00E93109 /* StorageReference+Post.swift */; };
 		9E30EA531F04695C00E93109 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E30EA521F04695C00E93109 /* Home.storyboard */; };
+		9E30EA551F05726400E93109 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30EA541F05726400E93109 /* PostImageCell.swift */; };
+		9E30EA5B1F057BB900E93109 /* SFDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E30EA561F057BB900E93109 /* SFDisplay-Medium.otf */; };
+		9E30EA5C1F057BB900E93109 /* SFDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E30EA571F057BB900E93109 /* SFDisplay-Regular.otf */; };
+		9E30EA5D1F057BB900E93109 /* SFDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E30EA581F057BB900E93109 /* SFDisplay-Thin.otf */; };
+		9E30EA5E1F057BB900E93109 /* SFText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E30EA591F057BB900E93109 /* SFText-Regular.otf */; };
+		9E30EA5F1F057BB900E93109 /* SFText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E30EA5A1F057BB900E93109 /* SFText-Semibold.otf */; };
+		9E30EA621F057EB500E93109 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30EA611F057EB500E93109 /* PostHeaderCell.swift */; };
+		9E30EA651F0584BC00E93109 /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30EA641F0584BC00E93109 /* PostActionCell.swift */; };
 		9E9079B01EFD96DB00A45C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9079AF1EFD96DB00A45C21 /* Assets.xcassets */; };
 		9E9079BD1EFDC80800A45C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9079BC1EFDC80800A45C21 /* AppDelegate.swift */; };
 		9E9079BF1EFDC81900A45C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9079BE1EFDC81900A45C21 /* Main.storyboard */; };
@@ -50,6 +58,14 @@
 		9E30EA4E1F0460FF00E93109 /* UIImage+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
 		9E30EA501F0461EA00E93109 /* StorageReference+Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
 		9E30EA521F04695C00E93109 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Storyboards/Home.storyboard; sourceTree = "<group>"; };
+		9E30EA541F05726400E93109 /* PostImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
+		9E30EA561F057BB900E93109 /* SFDisplay-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFDisplay-Medium.otf"; sourceTree = "<group>"; };
+		9E30EA571F057BB900E93109 /* SFDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFDisplay-Regular.otf"; sourceTree = "<group>"; };
+		9E30EA581F057BB900E93109 /* SFDisplay-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFDisplay-Thin.otf"; sourceTree = "<group>"; };
+		9E30EA591F057BB900E93109 /* SFText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Regular.otf"; sourceTree = "<group>"; };
+		9E30EA5A1F057BB900E93109 /* SFText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Semibold.otf"; sourceTree = "<group>"; };
+		9E30EA611F057EB500E93109 /* PostHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
+		9E30EA641F0584BC00E93109 /* PostActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostActionCell.swift; sourceTree = "<group>"; };
 		9E9079A51EFD96DB00A45C21 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9079AF1EFD96DB00A45C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E9079BC1EFDC80800A45C21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +145,28 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		9E30EA601F057BC100E93109 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9E30EA561F057BB900E93109 /* SFDisplay-Medium.otf */,
+				9E30EA571F057BB900E93109 /* SFDisplay-Regular.otf */,
+				9E30EA581F057BB900E93109 /* SFDisplay-Thin.otf */,
+				9E30EA591F057BB900E93109 /* SFText-Regular.otf */,
+				9E30EA5A1F057BB900E93109 /* SFText-Semibold.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		9E30EA631F057F2500E93109 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E30EA611F057EB500E93109 /* PostHeaderCell.swift */,
+				9E30EA541F05726400E93109 /* PostImageCell.swift */,
+				9E30EA641F0584BC00E93109 /* PostActionCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		9E90799C1EFD96DB00A45C21 = {
 			isa = PBXGroup;
 			children = (
@@ -150,9 +188,11 @@
 		9E9079A71EFD96DB00A45C21 /* Makestagram */ = {
 			isa = PBXGroup;
 			children = (
+				9E30EA601F057BC100E93109 /* Fonts */,
 				9E9079BC1EFDC80800A45C21 /* AppDelegate.swift */,
 				9E02F7531F01C22A00A1BAF7 /* Services */,
 				9E9079CD1EFDC99000A45C21 /* View Controllers */,
+				9E30EA631F057F2500E93109 /* Views */,
 				9E02F74C1F018A3A00A1BAF7 /* Models */,
 				9E9079CE1EFDC99800A45C21 /* Storyboards */,
 				9E02F7741F02D35C00A1BAF7 /* Extensions */,
@@ -260,10 +300,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E9079B01EFD96DB00A45C21 /* Assets.xcassets in Resources */,
+				9E30EA5B1F057BB900E93109 /* SFDisplay-Medium.otf in Resources */,
+				9E30EA5E1F057BB900E93109 /* SFText-Regular.otf in Resources */,
+				9E30EA5C1F057BB900E93109 /* SFDisplay-Regular.otf in Resources */,
 				9E9079CA1EFDC88D00A45C21 /* GoogleService-Info.plist in Resources */,
 				9E9079C51EFDC84100A45C21 /* LaunchScreen.storyboard in Resources */,
 				9E30EA531F04695C00E93109 /* Home.storyboard in Resources */,
 				9E9079D01EFDCBFF00A45C21 /* Login.storyboard in Resources */,
+				9E30EA5F1F057BB900E93109 /* SFText-Semibold.otf in Resources */,
+				9E30EA5D1F057BB900E93109 /* SFDisplay-Thin.otf in Resources */,
 				9E9079BF1EFDC81900A45C21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,7 +373,9 @@
 				9E02F74B1F018A3600A1BAF7 /* User.swift in Sources */,
 				9E02F7841F030AA700A1BAF7 /* MainTabBarController.swift in Sources */,
 				9E02F7521F01C21300A1BAF7 /* UserService.swift in Sources */,
+				9E30EA651F0584BC00E93109 /* PostActionCell.swift in Sources */,
 				9E30EA4D1F0442A400E93109 /* Post.swift in Sources */,
+				9E30EA551F05726400E93109 /* PostImageCell.swift in Sources */,
 				9E30EA4F1F0460FF00E93109 /* UIImage+Size.swift in Sources */,
 				9E02F77C1F02F79D00A1BAF7 /* CreateUsernameViewController.swift in Sources */,
 				9E02F7861F03228E00A1BAF7 /* MGPhotoHelper.swift in Sources */,
@@ -338,6 +385,7 @@
 				9E02F7731F02D2D600A1BAF7 /* Constants.swift in Sources */,
 				9E30EA4B1F0433C400E93109 /* PostService.swift in Sources */,
 				9E9079BD1EFDC80800A45C21 /* AppDelegate.swift in Sources */,
+				9E30EA621F057EB500E93109 /* PostHeaderCell.swift in Sources */,
 				9E02F77E1F02F7A500A1BAF7 /* FindFriendsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

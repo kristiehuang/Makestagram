@@ -32,12 +32,14 @@
 		9E30EA5F1F057BB900E93109 /* SFText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E30EA5A1F057BB900E93109 /* SFText-Semibold.otf */; };
 		9E30EA621F057EB500E93109 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30EA611F057EB500E93109 /* PostHeaderCell.swift */; };
 		9E30EA651F0584BC00E93109 /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30EA641F0584BC00E93109 /* PostActionCell.swift */; };
+		9E30EA671F05A2F800E93109 /* LikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30EA661F05A2F800E93109 /* LikeService.swift */; };
 		9E9079B01EFD96DB00A45C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9079AF1EFD96DB00A45C21 /* Assets.xcassets */; };
 		9E9079BD1EFDC80800A45C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9079BC1EFDC80800A45C21 /* AppDelegate.swift */; };
 		9E9079BF1EFDC81900A45C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9079BE1EFDC81900A45C21 /* Main.storyboard */; };
 		9E9079C51EFDC84100A45C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9079C41EFDC84100A45C21 /* LaunchScreen.storyboard */; };
 		9E9079CA1EFDC88D00A45C21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E9079C81EFDC88D00A45C21 /* GoogleService-Info.plist */; };
 		9E9079D01EFDCBFF00A45C21 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9079CF1EFDCBFF00A45C21 /* Login.storyboard */; };
+		9EA3CB471F06FE11004B01F2 /* FollowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3CB461F06FE11004B01F2 /* FollowService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,7 @@
 		9E30EA5A1F057BB900E93109 /* SFText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Semibold.otf"; sourceTree = "<group>"; };
 		9E30EA611F057EB500E93109 /* PostHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
 		9E30EA641F0584BC00E93109 /* PostActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostActionCell.swift; sourceTree = "<group>"; };
+		9E30EA661F05A2F800E93109 /* LikeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeService.swift; sourceTree = "<group>"; };
 		9E9079A51EFD96DB00A45C21 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9079AF1EFD96DB00A45C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E9079BC1EFDC80800A45C21 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		9E9079C81EFDC88D00A45C21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9E9079C91EFDC88D00A45C21 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
 		9E9079CF1EFDCBFF00A45C21 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		9EA3CB461F06FE11004B01F2 /* FollowService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowService.swift; sourceTree = "<group>"; };
 		D560B2794137BD9D07130C1F /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		F6DB936740F335E1A092931B /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +126,8 @@
 				9E02F7511F01C21300A1BAF7 /* UserService.swift */,
 				9E30EA481F042FC400E93109 /* StorageService.swift */,
 				9E30EA4A1F0433C400E93109 /* PostService.swift */,
+				9E30EA661F05A2F800E93109 /* LikeService.swift */,
+				9EA3CB461F06FE11004B01F2 /* FollowService.swift */,
 			);
 			name = Services;
 			path = ..;
@@ -368,12 +374,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EA3CB471F06FE11004B01F2 /* FollowService.swift in Sources */,
 				9E02F7821F02F7B100A1BAF7 /* LoginViewController.swift in Sources */,
 				9E30EA491F042FC400E93109 /* StorageService.swift in Sources */,
 				9E02F74B1F018A3600A1BAF7 /* User.swift in Sources */,
 				9E02F7841F030AA700A1BAF7 /* MainTabBarController.swift in Sources */,
 				9E02F7521F01C21300A1BAF7 /* UserService.swift in Sources */,
 				9E30EA651F0584BC00E93109 /* PostActionCell.swift in Sources */,
+				9E30EA671F05A2F800E93109 /* LikeService.swift in Sources */,
 				9E30EA4D1F0442A400E93109 /* Post.swift in Sources */,
 				9E30EA551F05726400E93109 /* PostImageCell.swift in Sources */,
 				9E30EA4F1F0460FF00E93109 /* UIImage+Size.swift in Sources */,

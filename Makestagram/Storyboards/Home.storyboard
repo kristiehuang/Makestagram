@@ -117,6 +117,7 @@
                                                         <constraint firstAttribute="width" secondItem="s02-xx-4TY" secondAttribute="height" multiplier="4:3" id="4lj-Ku-LMW"/>
                                                     </constraints>
                                                     <state key="normal" image="btn_heart_black_outline"/>
+                                                    <state key="selected" image="btn_heart_red_solid"/>
                                                     <connections>
                                                         <action selector="likeButtonTapped:" destination="gAh-5I-B6z" eventType="touchUpInside" id="Q8l-B6-WuE"/>
                                                     </connections>
@@ -198,7 +199,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="KUH-A2-lpM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KUH-A2-lpM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -214,6 +215,7 @@
     </scenes>
     <resources>
         <image name="btn_heart_black_outline" width="24" height="24"/>
+        <image name="btn_heart_red_solid" width="24" height="24"/>
         <image name="btn_options_black" width="24" height="24"/>
         <image name="tab_home_black" width="25" height="25"/>
     </resources>

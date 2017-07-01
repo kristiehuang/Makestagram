@@ -17,7 +17,7 @@ class Post {
     let creationDate: Date
     
     var likeCount: Int
-    var poster: User
+    let poster: User
     
     var isLiked: Bool = false
     
@@ -28,8 +28,13 @@ class Post {
     }
     
     
-
-    
+    init(imageURL: String, imageHeight: CGFloat) {
+        self.imageURL = imageURL
+        self.imageHeight = imageHeight
+        self.creationDate = Date()
+        self.poster = User.current
+        self.likeCount = 0
+    }
 
     
     init?(snapshot: DataSnapshot) {
@@ -52,15 +57,7 @@ class Post {
     }
 
     
-    init(imageURL: String, imageHeight: CGFloat) {
-        self.imageURL = imageURL
-        self.imageHeight = imageHeight
-        self.creationDate = Date()
-        self.poster = User.current
-        self.likeCount = 0
-        self.poster = User.current
-    }
-    
+
     
 
 }

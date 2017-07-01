@@ -66,7 +66,6 @@ extension HomeViewController: UITableViewDataSource {
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostActionCell") as! PostActionCell
-            //time ago label
             cell.delegate = self
             configureCell(cell, with: post)
             
@@ -90,6 +89,7 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func configureCell(_ cell: PostActionCell, with post: Post) {
+        print("configure cell")
         cell.timeStampLabel.text = timestampFormatter.string(from: post.creationDate)
         cell.likeButton.isSelected = post.isLiked
         cell.likeCountLabel.text = "\(post.likeCount) likes"
@@ -127,6 +127,7 @@ extension HomeViewController: PostActionCellDelegate {
         let post = posts[indexPath.section]
         
         LikeService.setIsLiked(!post.isLiked, for: post) { (success) in
+            print("start")
             defer {
                 likeButton.isUserInteractionEnabled = true
             }
@@ -141,6 +142,7 @@ extension HomeViewController: PostActionCellDelegate {
             DispatchQueue.main.async {
                 self.configureCell(cell, with: post)
             }
+            print("setisliked end")
         }
     }
 }

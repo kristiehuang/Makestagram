@@ -13,6 +13,7 @@ class User: NSObject {
     
     let uid:String
     let username:String
+    var isFollowed = false
     
     init(uid:String, username:String) {
         self.uid = uid
@@ -22,7 +23,8 @@ class User: NSObject {
     }
     
     init?(snapshot: DataSnapshot) {
-        guard let dict = snapshot.value as? [String : Any], let username = dict["username"] as? String
+        guard let dict = snapshot.value as? [String : Any],
+            let username = dict["username"] as? String
             else { return nil }
         
         self.uid = snapshot.key

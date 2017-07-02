@@ -24,19 +24,32 @@ class HomeViewController: UIViewController {
         return dateFormatter
     }()
     
+    let refreshControl = UIRefreshControl()
+    
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
         configureTableView()
+        reloadTimeline()
         
-        UserServices.retrievePosts(for: User.current) { (posts) in
+        print("logged in: \(User.current.username)")
+
+        
+    }
+    
+    func reloadTimeline() {
+        UserServices.timeline { (posts) in
             self.posts = posts
+            
+            if self.refreshControl.isRefreshing {
+                self.refreshControl.endRefreshing()
+            }
             self.tableView.reloadData()
         }
     }
-
+    
 }
 
 //setup table to retrieve data from Post array
@@ -47,7 +60,7 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let post = posts[indexPath.section]
-
+        
         
         switch indexPath.row {
         case 0:
@@ -56,7 +69,7 @@ extension HomeViewController: UITableViewDataSource {
             cell.usernameLabel.text = User.current.username
             
             return cell
-
+            
         case 1:
             //phoot
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostImageCell", for: indexPath) as! PostImageCell
@@ -70,7 +83,7 @@ extension HomeViewController: UITableViewDataSource {
             configureCell(cell, with: post)
             
             return cell
-
+            
         default:
             fatalError("error: unexpected indexPath")
         }
@@ -82,8 +95,12 @@ extension HomeViewController: UITableViewDataSource {
         //remove separators for empty and all cells
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
+        
+        //add pull to refresh
+        refreshControl.addTarget(self, action: #selector(reloadTimeline), for: .valueChanged)
+        tableView.addSubview(refreshControl)
     }
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return posts.count
     }
@@ -112,7 +129,7 @@ extension HomeViewController: UITableViewDelegate {
         default:
             fatalError()
         }
-
+        
     }
 }
 

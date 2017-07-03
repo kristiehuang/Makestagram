@@ -157,7 +157,10 @@ struct UserServices {
                 
                 guard let postDict = postSnap.value as? [String : Any],
                     let posterUID = postDict["poster_uid"] as? String
+                    
                     else { continue }
+                
+                print("poster of post: \(posterUID)")
                 
                 dispatchGroup.enter()
                 
@@ -169,6 +172,7 @@ struct UserServices {
                     dispatchGroup.leave()
                 }
             }
+            
             
             dispatchGroup.notify(queue: .main, execute: {
                 completion(posts.reversed())

@@ -84,15 +84,17 @@ struct LikeService {
     
     static func isPostLiked(_ post: Post, byCurrentUserWithCompletion completion: @escaping (Bool) -> Void) {
         guard let postKey = post.key else {
-            assertionFailure("Error: post must have key")
+            assertionFailure("Error: post must have key.")
             return completion(false)
         }
-        let likesRef = Database.database().reference().child("postsLikes").child(postKey)
+        
+        let likesRef = Database.database().reference().child("postLikes").child(postKey)
         likesRef.queryEqual(toValue: nil, childKey: User.current.uid).observeSingleEvent(of: .value, with: { (snapshot) in
             if let _ = snapshot.value as? [String : Bool] {
                 completion(true)
+            } else {
+                completion(false)
             }
-            else { completion(false) }
         })
     }
     

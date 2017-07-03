@@ -30,8 +30,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aXO-nU-BpL">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aXO-nU-BpL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostHeaderCell" rowHeight="54" id="pKN-Z0-UOJ" customClass="PostHeaderCell" customModule="Makestagram" customModuleProvider="target">
@@ -177,6 +177,7 @@
                         <constraints>
                             <constraint firstItem="aXO-nU-BpL" firstAttribute="height" secondItem="Zcc-O3-DIs" secondAttribute="height" id="8rb-b2-qY1"/>
                             <constraint firstItem="aXO-nU-BpL" firstAttribute="leading" secondItem="Zcc-O3-DIs" secondAttribute="leading" id="Uwi-S4-pDd"/>
+                            <constraint firstItem="aXO-nU-BpL" firstAttribute="centerY" secondItem="Zcc-O3-DIs" secondAttribute="centerY" id="Wr5-wQ-eYL"/>
                             <constraint firstAttribute="trailing" secondItem="aXO-nU-BpL" secondAttribute="trailing" id="lEb-hV-tAh"/>
                         </constraints>
                     </view>
@@ -198,7 +199,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KUH-A2-lpM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="KUH-A2-lpM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

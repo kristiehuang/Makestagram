@@ -62,11 +62,16 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let post = posts[indexPath.section]
         
+        
+        
+        
         switch indexPath.row {
         case 0:
             //header
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostHeaderCell") as! PostHeaderCell
             cell.usernameLabel.text = User.current.username
+            
             //currentuser!! not poster
             
             return cell
